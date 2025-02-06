@@ -1,7 +1,7 @@
 # REAL Lab Kinematics Prediction Experiments
 
 ## Overview
-![Training Demo](./docs/training_demo.gif)  
+![Training Demo](./media/overview.gif)  
 
 This repository contains experiments from the REAL lab focused on predicting joint kinematics from wearable motion data. We integrate multiple sensors (IMUs, EMG) and estimate joint angles (like elbow/arm flexion) using deep learning approaches. The included scripts and notebooks demonstrate different training paradigms—LSTM/GRU encoders, gating modules, adversarial training, teacher-student models, and more.
 
@@ -26,7 +26,7 @@ Pose detection models analyze skeletal movement by identifying joint locations a
 
 ### Marker & Sensor Placement  
 <div align="center">
-    <img src="./media/marker_set_and_sensors.png" width="300">  
+    <img src="./media/marker_set_and_sensors.png" >  
 </div>  
 
 Each experiment integrates IMUs and EMG sensors along with optical motion capture markers to ensure accurate joint angle estimation. This image shows the exact placement of sensors used for data collection.
@@ -99,5 +99,5 @@ This visualization shows the actual signals recorded from sensors, which serve a
 
 1. **Clone** this repository:
    ```bash
-   git clone https://github.com/YourUsername/REAL-Lab-Kinematics-Prediction.git
+   git clone https://github.com/oliverkristianfritsche/UpperBody_Kinematics_Prediction.git
    ```
