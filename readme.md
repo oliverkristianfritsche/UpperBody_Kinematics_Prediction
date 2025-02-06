@@ -33,14 +33,14 @@ Each experiment integrates IMUs and EMG sensors along with optical motion captur
 
 ### Model Diagram  
 <div align="center">
-    <img src="./media/model_diagram.png" width="300">  
+    <img src="./media/model_diagram.png" >  
 </div>  
 
 The processing pipeline takes raw motion capture and wearable sensor data as input, passing it through deep learning models to predict kinematic outcomes.
 
 ### Sensor Data Example  
 <div align="center">
-    <img src="./media/sensor_data.png" width="300">  
+    <img src="./media/sensor_data.png" >  
 </div>  
 
 This visualization shows the actual signals recorded from sensors, which serve as inputs for training models to predict joint angles and motion patterns.
