@@ -212,6 +212,8 @@ is the full teacher-to-student sensor-distillation pipeline. See
 
 If you use this dataset or code, please cite the ULTRA-MoCap paper:
 
+> Fritsche, O., Camacho, S., Hossain, M. S. B., Halfpenny, T., Arciniegas, C., Dranetz, J., Hadley, D., Guo, Z. & Choi, H. ULTRA-MoCap: A Multimodal IMU and sEMG Dataset for Upper Body Joint Kinematics Analysis. *Scientific Data* **13**, 622 (2026). https://doi.org/10.1038/s41597-026-06687-5
+
 ```bibtex
 @article{fritsche2026ultramocap,
   title   = {ULTRA-MoCap: A Multimodal IMU and sEMG Dataset for Upper Body Joint Kinematics Analysis},
