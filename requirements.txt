@@ -1,0 +1,39 @@
+# Python dependencies inferred from the notebook imports.
+#
+# Versions are intentionally unpinned: the experiments were developed in Google Colab
+# over an extended period and exact versions were not recorded. Pin to your own
+# environment as needed.
+#
+# The notebooks were authored in Colab and import `google.colab` for Google Drive access;
+# that module is provided by the Colab runtime and is not installable via pip.
+
+# --- Core scientific stack ---
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+h5py
+joblib
+tqdm
+
+# --- Deep learning ---
+torch
+torchvision
+torchmetrics
+
+# --- Experiment tracking ---
+wandb
+
+# --- Model-specific (install only for the corresponding experiments) ---
+ncps                # liquid neural networks (LTC / CfC)
+diffusers           # diffusion-policy regression
+mamba-ssm           # Mamba state-space backbone (requires CUDA + causal-conv1d)
+pytorch-lightning   # liquid-net training notebooks
+hdbscan             # subject clustering
+tensorflow          # only the Keras liquid-net notebook (LNN+Dense keras.ipynb)
+
+# --- Notebook / UI ---
+ipython
+ipywidgets

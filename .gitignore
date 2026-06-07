@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.python-version
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets / credentials (never commit)
+.env
+.env.*
+*.key
+*.pem
+.netrc
+wandb/
+.wandb/
+
+# Data (ULTRA-MoCap is IRB-restricted and distributed separately; see the paper)
+data/
+datasets/
+shards/
+*_shards/
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.parquet
+*.mat
+*.c3d
+*.trc
+*.mot
+*.sto
+*.pkl
+*.wav
+
+# Model checkpoints / weights
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+checkpoints/
