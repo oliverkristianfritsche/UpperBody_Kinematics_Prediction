@@ -1,0 +1,34 @@
+group,method,task,model,loss,window_len,window_overlap,n_runs,n_folds,within_rmse_deg,within_pcc,cross_rmse_deg,cross_pcc
+TeacherModel_RMSELoss_wl100_ol75_ekf_morejoints,EKF + expanded joint set (NOT comparable),joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,4.374,0.983,13.408,0.715
+TeacherModel_RMSELoss_wl100_ol75_nogradientreversal,"DANN architecture, reversal OFF (control)",joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,5.432,0.986,14.489,0.77
+TeacherModel_RMSELoss_wl100_ol75_gradientreversal_higherpenalty_reversal_norev,"DANN higher-penalty, reversal off (control)",joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,5.532,0.985,14.499,0.777
+TeacherModel_RMSELoss_wl100_ol75_smoothgtjoints,Smoothed ground-truth joints,joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,14,13,5.315,0.986,14.621,0.762
+TeacherModel_RMSELoss_wl100_ol75_ekf_noemg,"IMU-only (no EMG), EKF preprocessing",joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,4.755,0.989,14.704,0.771
+TeacherModel_RMSELoss_wl100_ol75_noEMG,IMU-only (no EMG),joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,5.459,0.985,14.755,0.76
+TeacherModel_RMSELoss_wl100_ol75_learnablebias,Learnable per-output bias,joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,5.356,0.986,14.758,0.758
+TeacherModel_RMSELoss_wl100_ol75_gradientreversal,Gradient reversal (DANN),joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,5.692,0.984,14.798,0.769
+TeacherModel_RMSELoss_wl100_ol75_gradientreversal_higherpenalty,"Gradient reversal (DANN), higher penalty",joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,6.172,0.981,14.812,0.766
+TeacherModel_RMSELoss_wl100_ol75_ekf_globalnormalizedjoints,EKF + globally-normalized joint targets,joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,5.271,0.986,15.292,0.74
+TeacherModel_RMSELoss_wl100_ol75,"Baseline (dual-encoder teacher, RMSE)",joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,35,13,5.059,0.989,15.399,0.722
+TeacherModel_RMSELoss_wl100_ol75_l1_1e-06,L1 weight reg (λ=1e-06),joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,7.366,0.975,15.495,0.747
+TeacherModel_RMSELoss_wl100_ol75_usestatics_subtractoffset,Static-pose offset subtraction,joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,5.793,0.984,15.54,0.731
+TeacherModel_RMSELoss_wl100_ol75_ekf,EKF-preprocessed inputs,joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,5.227,0.986,15.778,0.733
+TeacherModel_RMSELoss_wl100_ol75_ekf_feyman,EKF + 'feyman' variant [confirm meaning],joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,5.425,0.985,15.922,0.725
+TeacherModel_RMSELoss_wl100_ol75_l1_1e-05,L1 weight reg (λ=1e-05),joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,10.453,0.944,16.0,0.718
+TeacherModel_RMSELoss_wl200_ol199_singletimestep_tempconv,"Temporal-conv, single-timestep (wl200/ol199)",joint-angle LOSO,TeacherModelTempConv,RMSELoss,200,199,8,8,2.659,0.996,16.531,0.569
+TeacherModel_AdapRMSELoss_wl100_ol75_ekf_globalnormalizedjoints_adap_rmse,EKF + globally-normalized joint targets,joint-angle LOSO,TeacherModelBase,AdamRMSELoss,100,75,13,13,11.882,0.913,16.556,0.671
+TeacherModel_RMSELoss_wl100_ol75_predinterpolation,Prediction interpolation,joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,11.949,0.941,16.982,0.7
+TeacherModel_RMSELoss_wl100_ol75_normalizewithstaticstrials,Normalize using static trials,joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,6.071,0.982,17.019,0.707
+TeacherModel_RMSELoss_wl100_ol75_ekf_relAngles_ShoulderFirs,EKF + relative angles (shoulder-first),joint-angle LOSO,TeacherModelBase__relAngles_ShoulderFirs,RMSELoss,100,75,13,13,7.07,0.975,17.449,0.697
+TeacherModel_RMSELoss_wl100_ol75_l1_0.0001,L1 weight reg (λ=0.0001),joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,15.364,0.857,17.685,0.617
+TeacherModel_RMSELoss_wl200_ol75,"Baseline, longer window (wl200)",joint-angle LOSO,TeacherModelBase,RMSELoss,200,75,10,7,5.625,0.99,18.735,0.841
+TeacherModel_RMSELoss_wl100_ol75_l1_0.0005,L1 weight reg (λ=0.0005),joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,20.432,0.687,20.732,0.51
+TeacherModel_RMSELoss_wl100_ol75_l1_0.001,L1 weight reg (λ=0.001),joint-angle LOSO,TeacherModelBase,RMSELoss,100,75,13,13,23.754,0.579,23.549,0.398
+itransformer_RMSELoss_wl100_ol75_singletimestep,"iTransformer, single-timestep",joint-angle LOSO,itransformer,RMSELoss,100,75,3,2,37.55,0.338,31.445,0.045
+itransformer_RMSELoss_wl100_ol75_singletimestep_optimizepcc,"iTransformer, single-timestep, PCC-opt (diverged)",joint-angle LOSO,itransformer,RMSELoss,100,75,7,3,2025.315,0.406,1620.221,0.109
+TeacherModel_RMSELoss_wl100_ol75_inpainting,Inpainting (full),sensor inpainting / gap-fill (separate task),TeacherModelBase,RMSELoss,100,75,15,13,,,,
+TeacherModel_RMSELoss_wl200_ol75_inpainting,Inpainting (full),sensor inpainting / gap-fill (separate task),TeacherModelBase,RMSELoss,200,75,30,13,,,,
+TeacherModel_RMSELoss_wl200_ol75_inpainting_emg,"Inpainting, EMG-only",sensor inpainting / gap-fill (separate task),TeacherModelBase,RMSELoss,200,75,31,13,,,,
+TeacherModel_RMSELoss_wl200_ol75_inpainting_imu,"Inpainting, IMU-only",sensor inpainting / gap-fill (separate task),TeacherModelBase,RMSELoss,200,75,19,13,,,,
+TeacherModel_RMSELoss_wl200_ol75_inpainting_imu_transformer,"Inpainting, IMU, transformer",sensor inpainting / gap-fill (separate task),TeacherModelBase,RMSELoss,200,75,15,13,,,,
+DiffusionGapFill_wl200_ol75,Diffusion gap-fill (UNet),sensor inpainting / gap-fill (separate task),DiffusionUNet,MSE_ε,200,75,18,13,,,,
